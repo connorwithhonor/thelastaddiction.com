@@ -1,1 +1,186 @@
-{"id":"/terms","path":"/terms","sha":"c379245124cdb8fb7dc2cb71b9445eed05d104e8","mime_type":"text/plain","size":15969,"site_id":"cdee915a-aaa4-45f8-9f4a-90b593ddb9b4","deploy_id":"69d6fc6472793635ae83b535"}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member Agreement — The Last Addiction</title>
+<meta name="description" content="Member Agreement, Waiver of Liability, Assumption of Risk, and Terms of Use for TheLastAddiction.com">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--black:#080808;--ember:#E8350A;--ash:#1a1a1a;--smoke:#2a2a2a;--bone:#c8c0b4;--white:#F2EDE4;--ghost:#888;}
+body{background:var(--black);color:var(--white);font-family:'DM Mono',monospace;line-height:1.7;}
+nav{background:rgba(8,8,8,0.97);padding:18px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--ash);position:sticky;top:0;z-index:100;}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:3px;color:var(--ember);text-decoration:none;}
+.nav-logo span{color:var(--white);}
+.nav-back{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--bone);text-decoration:none;transition:color 0.2s;}
+.nav-back:hover{color:var(--ember);}
+.hero{background:var(--ash);padding:80px 40px 60px;border-bottom:1px solid var(--smoke);}
+.hero-inner{max-width:860px;margin:0 auto;}
+.hero-tag{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--ember);margin-bottom:16px;}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,8vw,96px);line-height:0.92;margin-bottom:20px;}
+.hero-meta{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:300;color:var(--ghost);}
+.content{max-width:860px;margin:0 auto;padding:60px 40px 100px;}
+.alert{background:rgba(232,53,10,0.08);border:1px solid rgba(232,53,10,0.3);padding:24px 28px;margin-bottom:48px;}
+.alert p{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;line-height:1.6;color:var(--white);}
+h2{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;color:var(--white);margin:48px 0 16px;padding-top:16px;border-top:1px solid var(--smoke);}
+h2:first-of-type{margin-top:0;border-top:none;}
+h3{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ember);margin:24px 0 10px;}
+p{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:300;line-height:1.7;color:var(--bone);margin-bottom:16px;}
+p strong{color:var(--white);font-weight:600;}
+ul{margin:12px 0 20px 0;display:flex;flex-direction:column;gap:10px;}
+ul li{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:300;line-height:1.6;color:var(--bone);padding-left:20px;position:relative;}
+ul li::before{content:'—';position:absolute;left:0;color:var(--ember);}
+.contact-block{background:var(--ash);border-left:3px solid var(--ember);padding:24px 28px;margin:32px 0;}
+.contact-block p{margin-bottom:6px;}
+.contact-block p:last-child{margin-bottom:0;}
+footer{background:var(--ash);border-top:1px solid var(--smoke);padding:40px;text-align:center;}
+footer p{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:300;color:var(--ghost);}
+footer a{color:var(--ember);text-decoration:none;}
+footer a:hover{text-decoration:underline;}
+@media(max-width:600px){nav{padding:14px 20px;}.hero{padding:60px 20px 40px;}.content{padding:40px 20px 80px;}footer{padding:32px 20px;}}
+</style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://thelastaddiction.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://thelastaddiction.com/og-image.png"></head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">The Last<span> Addiction</span></a>
+  <a href="/" class="nav-back">← Back to Site</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-tag">Legal</p>
+    <h1>Member<br><span style="color:var(--ember)">Agreement</span></h1>
+    <p class="hero-meta">Waiver of Liability · Assumption of Risk · Terms of Use · Effective March 16, 2026</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="alert">
+    <p>PLEASE READ THIS AGREEMENT CAREFULLY BEFORE CREATING AN ACCOUNT. BY CLICKING "I AGREE" OR CREATING AN ACCOUNT, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE LEGALLY BOUND BY ALL TERMS SET FORTH HEREIN. IF YOU DO NOT AGREE, DO NOT CREATE AN ACCOUNT OR USE THIS PLATFORM.</p>
+  </div>
+
+  <h2>1. Parties and Definitions</h2>
+  <p>This Agreement is entered into between TheLastAddiction.com, operated by Connor MacIvor, located in Santa Clarita, California (hereinafter "The Last Addiction," "we," "us," or "the Platform"), and you, the individual creating a member account (hereinafter "Member," "you," or "User").</p>
+  <p>"Platform" means TheLastAddiction.com website, member portal, community features, journal tools, content, blog, and all associated services accessible at thelastaddiction.com and its subdomains.</p>
+  <p>"Content" means any text, photos, videos, journal entries, comments, or other material submitted by a Member to the Platform.</p>
+
+  <h2>2. Not Medical Advice</h2>
+  <p><strong>ALL CONTENT, INFORMATION, PROTOCOLS, JOURNAL ENTRIES, POSTS, VIDEOS, COMMUNITY DISCUSSIONS, AND MATERIALS ON THELASTADDICTION.COM ARE PROVIDED FOR INFORMATIONAL AND PERSONAL DOCUMENTATION PURPOSES ONLY.</strong></p>
+  <p>Nothing on this Platform constitutes, or should be construed as, medical advice, diagnosis, treatment, or a prescription of any kind. No physician-patient, counselor-client, or any other professional advisory relationship is created by your use of this Platform.</p>
+  <p>The Platform owner's personal experiences with fasting, weight loss, dietary choices, and exercise are shared as personal narrative only. Individual results vary significantly. What works for one person may be dangerous or wholly inappropriate for another.</p>
+  <p>Fasting — including but not limited to intermittent fasting, extended water fasting, and dry fasting — carries documented medical risks including but not limited to: electrolyte imbalance, cardiac arrhythmia, hypoglycemia, kidney stress, dehydration, and metabolic disruption.</p>
+
+  <h2>3. Mandatory Physician Consultation</h2>
+  <p><strong>BY CREATING AN ACCOUNT, YOU EXPRESSLY REPRESENT AND WARRANT THAT:</strong></p>
+  <ul>
+    <li>You have consulted with a licensed physician or qualified medical professional before beginning any fasting protocol, dietary change, or exercise program discussed on this Platform; OR</li>
+    <li>You will consult with a licensed physician or qualified medical professional before implementing any such protocol; AND</li>
+    <li>You understand that failure to do so is solely your responsibility and The Last Addiction bears no liability for any consequences thereof.</li>
+  </ul>
+  <p>Members with any of the following conditions should not use fasting protocols without direct, ongoing physician supervision:</p>
+  <ul>
+    <li>Diabetes (Type 1 or Type 2) or any blood sugar regulation disorder</li>
+    <li>Cardiovascular disease, heart arrhythmia, or history of heart attack or stroke</li>
+    <li>Kidney disease or impaired kidney function</li>
+    <li>Any eating disorder history including anorexia, bulimia, or binge eating disorder</li>
+    <li>Current pregnancy or breastfeeding</li>
+    <li>Any condition requiring daily medication that must be taken with food</li>
+    <li>Any immunocompromised condition</li>
+    <li>Being under the age of 18</li>
+  </ul>
+
+  <h2>4. Assumption of Risk</h2>
+  <p>You voluntarily and knowingly assume ALL risks associated with fasting, dietary changes, exercise, and any other health-related activities discussed on or inspired by this Platform.</p>
+  <p>You acknowledge that extended fasting — particularly dry fasting involving abstention from both food and water — carries significantly elevated risks compared to standard dietary restriction, and that you have independently researched and accepted these risks prior to attempting any such protocol.</p>
+  <p><strong>Your assumption of risk includes, but is not limited to: physical injury, illness, hospitalization, adverse medical events, and death. You accept these risks knowingly, voluntarily, and without coercion.</strong></p>
+
+  <h2>5. Release and Waiver of Liability</h2>
+  <p><strong>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, YOU HEREBY RELEASE, WAIVE, DISCHARGE, AND COVENANT NOT TO SUE TheLastAddiction.com, its owner Connor MacIvor, employees, agents, contractors, moderators, affiliates, and assigns (collectively, "Released Parties") FROM ANY AND ALL CLAIMS, DAMAGES, LOSSES, COSTS, AND EXPENSES — INCLUDING ATTORNEYS' FEES — ARISING OUT OF OR RELATED TO:</strong></p>
+  <ul>
+    <li>Your use of or reliance upon any content, information, or community discussion on this Platform</li>
+    <li>Any fasting, dietary, or exercise protocol you implement as a result of exposure to this Platform</li>
+    <li>Any physical, mental, or emotional harm resulting from your participation in any activity referenced on this Platform</li>
+    <li>Any technical errors, Platform downtime, or data loss</li>
+  </ul>
+  <p><strong>THIS RELEASE APPLIES TO CLAIMS ARISING FROM THE NEGLIGENCE OF THE RELEASED PARTIES, EXCEPT WHERE PROHIBITED BY LAW.</strong></p>
+
+  <h2>6. Indemnification</h2>
+  <p>You agree to indemnify, defend, and hold harmless the Released Parties from and against any claims, liabilities, damages, losses, and expenses, including reasonable attorneys' fees, arising out of or in any way connected with your use of the Platform, your violation of this Agreement, or your violation of any rights of any third party.</p>
+
+  <h2>7. No Guaranteed Results</h2>
+  <p>The Last Addiction makes no representations, warranties, or guarantees — express or implied — regarding any specific outcome from following protocols, advice, or information shared on this Platform.</p>
+  <p>The Platform owner's personal results (including documented weight loss of 135 pounds) are individual results achieved under specific personal circumstances and are not typical or guaranteed for any other individual.</p>
+
+  <h2>8. Member Content and Privacy Controls</h2>
+  <p>Members may submit Content to the Platform including journal entries, weight logs, photos, and videos. Members retain ownership of all Content they submit.</p>
+  <p>By submitting Content, you grant The Last Addiction a non-exclusive, royalty-free license to display, store, and transmit your Content in accordance with your chosen privacy settings:</p>
+  <ul>
+    <li><strong>Private</strong> — Content visible only to you</li>
+    <li><strong>Members Only</strong> — Content visible to all logged-in Platform members</li>
+    <li><strong>Select Members</strong> — Content visible only to members you specifically designate</li>
+    <li><strong>Public</strong> — Content visible to all visitors of the Platform</li>
+  </ul>
+  <p>When you designate Content as Public, you expressly grant The Last Addiction the right to share, feature, or reference that Content in marketing materials, social media, and Platform promotion.</p>
+
+  <h2>9. Age Requirement</h2>
+  <p>You must be at least 18 years of age to create an account or use this Platform. By creating an account you represent and warrant that you are 18 years of age or older.</p>
+
+  <h2>10. Mental Health and Eating Disorder Notice</h2>
+  <p><strong>This Platform is NOT appropriate for individuals with a diagnosed or suspected eating disorder, including anorexia nervosa, bulimia nervosa, binge eating disorder, or any related condition.</strong></p>
+  <p>If you are experiencing symptoms of an eating disorder or mental health crisis related to food, eating, or body image, please seek professional mental health support before using this Platform.</p>
+  <ul>
+    <li>National Alliance for Eating Disorders Helpline: 1-866-662-1235</li>
+    <li>Crisis Text Line: Text HOME to 741741</li>
+    <li>SAMHSA National Helpline: 1-800-662-4357</li>
+  </ul>
+
+  <h2>11. Emergency Services</h2>
+  <p><strong>IF YOU ARE EXPERIENCING A MEDICAL EMERGENCY, CALL 911 IMMEDIATELY. THE LAST ADDICTION IS NOT AN EMERGENCY SERVICE AND CANNOT DISPATCH EMERGENCY ASSISTANCE.</strong></p>
+
+  <h2>12. Community Standards</h2>
+  <p>Members agree not to use the Platform to post false or defamatory content, harass other members, promote dangerous behavior to others, solicit members for unauthorized commercial purposes, impersonate any person or entity, or violate any applicable law.</p>
+  <p>The Last Addiction reserves the right to suspend or permanently terminate any account that violates these standards, without refund and without prior notice.</p>
+
+  <h2>13. Badge System</h2>
+  <p>The Last Addiction operates a member badge and recognition system. Badges are awarded at the sole discretion of The Last Addiction and may be revoked at any time. No badge constitutes an endorsement of any member's health decisions. The Founder badge is held exclusively by Connor MacIvor and is non-transferable.</p>
+
+  <h2>14. Disclaimer of Warranties</h2>
+  <p><strong>THE PLATFORM IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE LAST ADDICTION DOES NOT WARRANT THAT THE PLATFORM WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF HARMFUL COMPONENTS.</strong></p>
+
+  <h2>15. Limitation of Liability</h2>
+  <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE LAST ADDICTION OR ITS OWNER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO PERSONAL INJURY OR DEATH, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY.</strong></p>
+
+  <h2>16. Governing Law and Dispute Resolution</h2>
+  <p>This Agreement shall be governed by and construed in accordance with the laws of the State of California. Any dispute arising under this Agreement shall be resolved by binding arbitration in Los Angeles County, California, under the rules of the American Arbitration Association.</p>
+  <p>By entering into this Agreement, you waive your right to a jury trial and your right to participate in any class action lawsuit against The Last Addiction.</p>
+
+  <h2>17. Modifications</h2>
+  <p>The Last Addiction reserves the right to modify this Agreement at any time. Members will be notified of material changes via email or Platform notice. Continued use following notification constitutes acceptance of the modified Agreement.</p>
+
+  <h2>18. Entire Agreement</h2>
+  <p>This Agreement constitutes the entire agreement between you and The Last Addiction with respect to your use of the Platform and supersedes all prior agreements and representations relating to the same subject matter.</p>
+
+  <h2>19. Contact</h2>
+  <div class="contact-block">
+    <p><strong>TheLastAddiction.com</strong></p>
+    <p>Operated by Connor MacIvor</p>
+    <p>Santa Clarita, California 91350</p>
+    <p>Email: connor@thelastaddiction.com</p>
+    <p>Phone: (661) 400-1720</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 TheLastAddiction.com — Santa Clarita, California</p>
+  <p style="margin-top:10px;"><a href="https://honorelevate.com" target="_blank">Coded by Connor with Honor | AI Growth Architect</a></p>
+  <p style="margin-top:10px;"><a href="/">← Back to The Last Addiction</a> &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>

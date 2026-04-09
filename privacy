@@ -1,1 +1,213 @@
-{"id":"/privacy","path":"/privacy","sha":"8be4df7aeadf0ecc20922740f41171f815290c71","mime_type":"text/plain","size":13954,"site_id":"cdee915a-aaa4-45f8-9f4a-90b593ddb9b4","deploy_id":"69d6fc6472793635ae83b535"}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — The Last Addiction</title>
+<meta name="description" content="Privacy Policy for TheLastAddiction.com — CCPA/CPRA compliant.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--black:#080808;--ember:#E8350A;--ash:#1a1a1a;--smoke:#2a2a2a;--bone:#c8c0b4;--white:#F2EDE4;--ghost:#888;}
+body{background:var(--black);color:var(--white);font-family:'DM Mono',monospace;line-height:1.7;}
+nav{background:rgba(8,8,8,0.97);padding:18px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--ash);position:sticky;top:0;z-index:100;}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:3px;color:var(--ember);text-decoration:none;}
+.nav-logo span{color:var(--white);}
+.nav-back{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--bone);text-decoration:none;transition:color 0.2s;}
+.nav-back:hover{color:var(--ember);}
+.hero{background:var(--ash);padding:80px 40px 60px;border-bottom:1px solid var(--smoke);}
+.hero-inner{max-width:860px;margin:0 auto;}
+.hero-tag{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--ember);margin-bottom:16px;}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,8vw,96px);line-height:0.92;margin-bottom:20px;}
+.hero-meta{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:300;color:var(--ghost);}
+.content{max-width:860px;margin:0 auto;padding:60px 40px 100px;}
+.alert{background:rgba(232,53,10,0.08);border:1px solid rgba(232,53,10,0.3);padding:24px 28px;margin-bottom:48px;}
+.alert p{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:300;line-height:1.6;color:var(--bone);}
+.alert p strong{color:var(--white);font-weight:600;}
+h2{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;color:var(--white);margin:48px 0 16px;padding-top:16px;border-top:1px solid var(--smoke);}
+h2:first-of-type{margin-top:0;border-top:none;}
+h3{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ember);margin:24px 0 10px;}
+p{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:300;line-height:1.7;color:var(--bone);margin-bottom:16px;}
+p strong{color:var(--white);font-weight:600;}
+ul{margin:12px 0 20px 0;display:flex;flex-direction:column;gap:10px;}
+ul li{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:300;line-height:1.6;color:var(--bone);padding-left:20px;position:relative;}
+ul li::before{content:'—';position:absolute;left:0;color:var(--ember);}
+.rights-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin:20px 0 28px;}
+.right-card{background:var(--ash);padding:20px 24px;border-top:2px solid var(--ember);}
+.right-card h4{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ember);margin-bottom:8px;}
+.right-card p{font-size:15px;margin-bottom:0;}
+.contact-block{background:var(--ash);border-left:3px solid var(--ember);padding:24px 28px;margin:32px 0;}
+.contact-block p{margin-bottom:6px;}
+.contact-block p:last-child{margin-bottom:0;}
+footer{background:var(--ash);border-top:1px solid var(--smoke);padding:40px;text-align:center;}
+footer p{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:300;color:var(--ghost);}
+footer a{color:var(--ember);text-decoration:none;}
+footer a:hover{text-decoration:underline;}
+@media(max-width:600px){nav{padding:14px 20px;}.hero{padding:60px 20px 40px;}.content{padding:40px 20px 80px;}.rights-grid{grid-template-columns:1fr;}footer{padding:32px 20px;}}
+</style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://thelastaddiction.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://thelastaddiction.com/og-image.png"></head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">The Last<span> Addiction</span></a>
+  <a href="/" class="nav-back">← Back to Site</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-tag">Legal</p>
+    <h1>Privacy<br><span style="color:var(--ember)">Policy</span></h1>
+    <p class="hero-meta">CCPA / CPRA Compliant · Effective March 16, 2026 · Last Updated March 16, 2026</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="alert">
+    <p>TheLastAddiction.com is operated by Connor MacIvor, Santa Clarita, California. This Privacy Policy explains how we collect, use, disclose, and protect your information. <strong>By using this Platform, you agree to the collection and use of your information as described here.</strong> This policy is designed to comply with the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA) and all applicable federal and state privacy laws.</p>
+  </div>
+
+  <h2>1. Information We Collect</h2>
+
+  <h3>Information You Provide Directly</h3>
+  <ul>
+    <li>Account registration: name, email address, date of birth (age verification)</li>
+    <li>Profile information: display name, profile photo, bio</li>
+    <li>Journal entries: written content, weight logs, photos, and videos you choose to post</li>
+    <li>Communications: messages sent via contact forms, email, or phone</li>
+    <li>Payment information: processed by third-party payment processors — we do not store full card numbers</li>
+    <li>Call booking information: name, email, phone number submitted via calendar booking</li>
+  </ul>
+
+  <h3>Health-Related Information</h3>
+  <p>TheLastAddiction.com is a health and wellness platform. When you use this Platform, you may voluntarily submit health-related information including body weight, fasting history, dietary practices, exercise habits, and personal transformation data. <strong>This is considered Sensitive Personal Information under the CPRA</strong> and is handled accordingly. We do not sell, share, or use sensitive personal information for purposes other than providing Platform services.</p>
+
+  <h3>Information Collected Automatically</h3>
+  <ul>
+    <li>IP address (logged at account creation and acceptance of Terms)</li>
+    <li>Browser type, version, and device type</li>
+    <li>Pages visited and time spent on the Platform</li>
+    <li>Referring website or source</li>
+    <li>Cookie and tracking data</li>
+  </ul>
+
+  <h2>2. How We Use Your Information</h2>
+  <ul>
+    <li>To create and maintain your member account</li>
+    <li>To provide, operate, and improve the Platform</li>
+    <li>To display your Content per your chosen privacy settings</li>
+    <li>To process payments for paid services</li>
+    <li>To respond to inquiries and provide support</li>
+    <li>To send Platform-related notifications and communications</li>
+    <li>To enforce our Member Agreement and community standards</li>
+    <li>To comply with applicable legal obligations</li>
+    <li>To detect and prevent fraudulent or illegal activity</li>
+  </ul>
+  <p><strong>We do NOT sell your personal information, use it for targeted advertising based on sensitive data, or build profiles for sale to data brokers.</strong></p>
+
+  <h2>3. California Privacy Rights (CCPA / CPRA)</h2>
+  <p>If you are a California resident, you have the following rights:</p>
+
+  <div class="rights-grid">
+    <div class="right-card">
+      <h4>Right to Know</h4>
+      <p>Request disclosure of what personal information we have collected, its sources, purpose, and who we share it with.</p>
+    </div>
+    <div class="right-card">
+      <h4>Right to Delete</h4>
+      <p>Request deletion of personal information we have collected, subject to certain legal exceptions.</p>
+    </div>
+    <div class="right-card">
+      <h4>Right to Correct</h4>
+      <p>Request correction of inaccurate personal information we maintain about you.</p>
+    </div>
+    <div class="right-card">
+      <h4>Right to Opt-Out</h4>
+      <p>We do not sell or share your personal information. If this changes we will update this Policy and provide a prominent opt-out.</p>
+    </div>
+    <div class="right-card">
+      <h4>Limit Sensitive Data</h4>
+      <p>Direct us to limit use of your sensitive personal information (including health data) to service delivery only. We already do this.</p>
+    </div>
+    <div class="right-card">
+      <h4>Non-Discrimination</h4>
+      <p>We will never discriminate against you for exercising any CCPA/CPRA rights.</p>
+    </div>
+  </div>
+
+  <p>To exercise any of these rights, contact us at:</p>
+  <div class="contact-block">
+    <p>Email: connor@thelastaddiction.com</p>
+    <p>Phone: (661) 400-1720</p>
+    <p>Mail: TheLastAddiction.com, Santa Clarita, CA 91350</p>
+  </div>
+  <p>We will respond to verifiable consumer requests within 45 days.</p>
+
+  <h2>4. How We Share Your Information</h2>
+  <p><strong>We do not sell your personal information.</strong> We may share your information only in these limited circumstances:</p>
+
+  <h3>Service Providers</h3>
+  <ul>
+    <li>Web hosting and infrastructure (Netlify)</li>
+    <li>Customer relationship and community management (HonorElevate.com platform)</li>
+    <li>Payment processing (third-party processors subject to their own privacy policies)</li>
+    <li>Email delivery and calendar scheduling services</li>
+  </ul>
+
+  <h3>Member-Controlled Sharing</h3>
+  <p>When you set Content to Members Only, Select Members, or Public, that Content is shared with the audiences you designate. You control this at all times through your account settings.</p>
+
+  <h3>Legal Requirements</h3>
+  <p>We may disclose your information if required by law, regulation, court order, or governmental authority, or if necessary to protect the rights, property, or safety of The Last Addiction, our members, or the public.</p>
+
+  <h2>5. Data Retention</h2>
+  <p>We retain your personal information for as long as your account is active or as needed to provide Platform services. Account deletion requests are processed within 45 days, except where retention is required by law. Private journal entries are deleted upon account deletion.</p>
+
+  <h2>6. Data Security</h2>
+  <p>We implement reasonable technical and organizational security measures including HTTPS encryption, access controls, and regular review of our information practices. No method of electronic transmission is 100% secure. If you believe your account has been compromised, contact us immediately at connor@thelastaddiction.com.</p>
+
+  <h2>7. Cookies</h2>
+  <p>We use cookies to maintain login sessions, remember preferences, and analyze Platform traffic. You can control cookie settings through your browser. We do not use third-party advertising cookies or cross-site tracking cookies.</p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>TheLastAddiction.com is not directed to individuals under 18. We do not knowingly collect personal information from anyone under 18. If we become aware of such collection, we will delete that information immediately.</p>
+
+  <h2>9. Mental Health Notice</h2>
+  <p><strong>This Platform is not appropriate for individuals with a diagnosed or suspected eating disorder.</strong> If you are experiencing a mental health crisis related to food or body image, please contact:</p>
+  <ul>
+    <li>National Alliance for Eating Disorders: 1-866-662-1235</li>
+    <li>Crisis Text Line: Text HOME to 741741</li>
+    <li>SAMHSA National Helpline: 1-800-662-4357</li>
+  </ul>
+
+  <h2>10. Emergency Services</h2>
+  <p><strong>IF YOU ARE EXPERIENCING A MEDICAL EMERGENCY, CALL 911 IMMEDIATELY.</strong> TheLastAddiction.com is not a substitute for emergency medical care and has no mechanism to dispatch emergency services.</p>
+
+  <h2>11. Communications and TCPA Compliance</h2>
+  <p>By providing your phone number or email during registration, you consent to receive transactional communications related to your account. By separately opting in, you may consent to receive marketing communications and SMS notifications. You may opt out at any time by clicking Unsubscribe in any email or replying STOP to any text message. We comply with the Telephone Consumer Protection Act (TCPA) and will not send automated marketing texts without your express prior written consent.</p>
+
+  <h2>12. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Material changes will be communicated via email notification and a prominent Platform notice. Continued use after the effective date of any change constitutes acceptance.</p>
+
+  <h2>13. Contact Us</h2>
+  <div class="contact-block">
+    <p><strong>TheLastAddiction.com</strong></p>
+    <p>Operated by Connor MacIvor</p>
+    <p>Santa Clarita, California 91350</p>
+    <p>Email: connor@thelastaddiction.com</p>
+    <p>Phone: (661) 400-1720</p>
+  </div>
+  <p>California residents may also contact the California Privacy Protection Agency at <strong>cppa.ca.gov</strong></p>
+
+</div>
+
+<footer>
+  <p>© 2026 TheLastAddiction.com — Santa Clarita, California</p>
+  <p style="margin-top:10px;"><a href="https://honorelevate.com" target="_blank">Coded by Connor with Honor | AI Growth Architect</a></p>
+  <p style="margin-top:10px;"><a href="/">← Back to The Last Addiction</a> &nbsp;|&nbsp; <a href="/terms">Member Agreement</a></p>
+</footer>
+
+</body>
+</html>

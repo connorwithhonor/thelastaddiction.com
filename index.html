@@ -1,1 +1,1595 @@
-{"id":"/index.html","path":"/index.html","sha":"e8de829c4df976ab793ca594addc0536ffa5ee0a","mime_type":"text/html","size":49225,"site_id":"cdee915a-aaa4-45f8-9f4a-90b593ddb9b4","deploy_id":"69d6fc6472793635ae83b535"}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Last Addiction — The War Against Food Addiction Starts Here</title>
+<meta name="description" content="You don't have a weight problem. You have an addiction problem. There's a difference. And it changes everything. The Last Addiction — Real protocols. No pills. No surgery. No lies.">
+<meta property="og:title" content="The Last Addiction — The War Against Food Addiction">
+<meta property="og:description" content="365 lbs to 240. 135 pounds of fat torched. The last addiction is the hardest one — food. Join the only real food addiction community built by someone living it.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#080808">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Barlow+Condensed:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #080808;
+  --ember: #E8350A;
+  --flame: #F5A623;
+  --ash: #1a1a1a;
+  --smoke: #2a2a2a;
+  --fog: #444;
+  --ghost: #888;
+  --bone: #c8c0b4;
+  --white: #F2EDE4;
+  --green: #2ECC71;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'DM Mono', monospace;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* ── PARTICLES ── */
+#particles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.spark {
+  position: absolute;
+  bottom: -10px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  animation: rise linear infinite;
+  opacity: 0;
+}
+
+@keyframes rise {
+  0%   { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
+  10%  { opacity: 0.8; }
+  50%  { opacity: 0.4; transform: translateY(-45vh) translateX(var(--drift)) scale(0.7); }
+  100% { transform: translateY(-100vh) translateX(var(--drift2)) scale(0.2); opacity: 0; }
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(8,8,8,0.95), transparent);
+}
+
+.nav-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: var(--ember);
+  text-decoration: none;
+}
+
+.nav-logo span { color: var(--white); }
+
+nav a.nav-cta {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--black);
+  background: var(--ember);
+  padding: 10px 24px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+nav a.nav-cta:hover { background: var(--flame); }
+
+/* ── HERO ── */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 40px 80px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(120px, 20vw, 320px);
+  color: rgba(232, 53, 10, 0.04);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -5px;
+}
+
+.hero-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 0.3s;
+}
+
+.hero-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(72px, 12vw, 180px);
+  line-height: 0.92;
+  letter-spacing: -2px;
+  margin-bottom: 32px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 0.5s;
+}
+
+.hero-headline .fire { color: var(--ember); }
+.hero-headline .dim  { color: var(--fog); }
+
+.hero-sub {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(18px, 2.5vw, 26px);
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 680px;
+  color: var(--bone);
+  margin-bottom: 48px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 0.7s;
+}
+
+.hero-sub strong { color: var(--white); font-weight: 600; }
+
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 0.9s;
+}
+
+.stat-block { display: flex; flex-direction: column; gap: 4px; }
+
+.stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1;
+  color: var(--ember);
+}
+
+.stat-num.green { color: var(--green); }
+.stat-num.gold  { color: var(--flame); }
+
+.stat-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ghost);
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 1.1s;
+}
+
+.btn-primary {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--black);
+  background: var(--ember);
+  padding: 18px 40px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  display: inline-block;
+}
+
+.btn-primary:hover { background: var(--flame); transform: translateY(-1px); }
+
+.btn-ghost {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--bone);
+  background: transparent;
+  padding: 18px 40px;
+  text-decoration: none;
+  border: 1px solid var(--smoke);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+.btn-ghost:hover { border-color: var(--ghost); color: var(--white); }
+
+/* ── DAY COUNTER ── */
+.day-counter {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 1.4s;
+}
+
+.day-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(80px, 12vw, 200px);
+  line-height: 1;
+  color: rgba(232, 53, 10, 0.15);
+  display: block;
+}
+
+.day-label {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--ember);
+  opacity: 0.6;
+}
+
+/* ── LIVE TICKER ── */
+.live-ticker {
+  background: var(--ember);
+  padding: 12px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.ticker-inner {
+  display: flex;
+  animation: ticker 30s linear infinite;
+  white-space: nowrap;
+}
+
+.ticker-item {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--black);
+  padding: 0 40px;
+}
+
+.ticker-sep { color: rgba(0,0,0,0.3); }
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── SECTION BASE ── */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ── THE TRUTH ── */
+#truth {
+  padding: 120px 0;
+  background: var(--ash);
+}
+
+.truth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.truth-left .section-tag {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 20px;
+}
+
+.truth-left h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(48px, 6vw, 88px);
+  line-height: 0.95;
+  margin-bottom: 32px;
+}
+
+.truth-left p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--bone);
+  margin-bottom: 20px;
+}
+
+.truth-left p strong { color: var(--white); font-weight: 600; }
+
+.truth-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.truth-card {
+  background: var(--smoke);
+  border-left: 3px solid var(--ember);
+  padding: 24px 28px;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.truth-card.visible { opacity: 1; transform: translateX(0); }
+
+.truth-card h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 10px;
+}
+
+.truth-card p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--bone);
+}
+
+/* ── THE MATH ── */
+#math {
+  padding: 120px 0;
+  background: var(--black);
+}
+
+.math-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.math-header .section-tag {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 16px;
+}
+
+.math-header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 0.95;
+  margin-bottom: 16px;
+}
+
+.math-header p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--bone);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 120px 40px 1fr;
+  gap: 0 20px;
+  align-items: start;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item.visible { opacity: 1; transform: translateY(0); }
+
+.t-weight {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  line-height: 1;
+  color: var(--ember);
+  text-align: right;
+  padding-top: 4px;
+}
+
+.t-weight.current { color: var(--flame); }
+.t-weight.target  { color: var(--green); }
+
+.t-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--ember);
+  border: 2px solid var(--black);
+  flex-shrink: 0;
+  margin-top: 12px;
+}
+
+.t-dot.current { background: var(--flame); }
+.t-dot.target  { background: var(--green); }
+
+.t-connector {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(to bottom, var(--ember), var(--smoke));
+  min-height: 60px;
+}
+
+.t-content {
+  padding: 8px 0 40px;
+}
+
+.t-content h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.t-content p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--bone);
+  line-height: 1.5;
+}
+
+.t-content .t-tag {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--black);
+  background: var(--ember);
+  padding: 3px 10px;
+  margin-bottom: 8px;
+}
+
+/* ── PROGRESS BAR ── */
+.progress-section {
+  background: var(--ash);
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.progress-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--ghost);
+}
+
+.progress-nums {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  color: var(--ember);
+}
+
+.progress-track {
+  height: 6px;
+  background: var(--smoke);
+  position: relative;
+  overflow: visible;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, var(--ember), var(--flame));
+  width: 0%;
+  transition: width 2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--flame);
+  box-shadow: 0 0 16px var(--flame);
+}
+
+.progress-markers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.progress-marker {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ghost);
+}
+
+/* ── PLATFORM ── */
+#platform {
+  padding: 120px 0;
+  background: var(--ash);
+}
+
+.platform-header {
+  margin-bottom: 80px;
+}
+
+.platform-header .section-tag {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 16px;
+}
+
+.platform-header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 0.95;
+  margin-bottom: 20px;
+}
+
+.platform-header p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--bone);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 80px;
+}
+
+.feature-card {
+  background: var(--smoke);
+  padding: 48px 36px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.feature-card.visible { opacity: 1; transform: translateY(0); }
+.feature-card:hover { background: #333; }
+
+.feature-icon {
+  font-size: 36px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.feature-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.feature-card p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--bone);
+}
+
+.feature-card .coming {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--flame);
+  border: 1px solid var(--flame);
+  padding: 4px 12px;
+}
+
+/* ── BADGES ── */
+.badges-section {
+  background: var(--black);
+  padding: 80px 40px;
+  border-top: 1px solid var(--smoke);
+  border-bottom: 1px solid var(--smoke);
+}
+
+.badges-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.badges-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.badges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 20px;
+  background: var(--ash);
+  border: 1px solid var(--smoke);
+  min-width: 130px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.badge:hover { border-color: var(--ember); transform: translateY(-3px); }
+
+.badge-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.badge-founder .badge-icon { background: linear-gradient(135deg, #B8860B, #FFD700); box-shadow: 0 0 20px rgba(255,215,0,0.3); }
+.badge-staff   .badge-icon { background: linear-gradient(135deg, #1e3a5f, #4a90d9); }
+.badge-earned  .badge-icon { background: linear-gradient(135deg, #3d1a00, #E8350A); }
+
+.badge-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+}
+
+.badge-desc {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--ghost);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ── HARD TRUTHS ── */
+#truths {
+  padding: 120px 0;
+  background: var(--black);
+}
+
+.truths-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.truths-header .section-tag {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 16px;
+}
+
+.truths-header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 0.95;
+}
+
+.quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.quote-block {
+  background: var(--ash);
+  padding: 48px;
+  border-top: 3px solid transparent;
+  transition: border-color 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s;
+}
+
+.quote-block.visible { opacity: 1; transform: translateY(0); }
+.quote-block:hover   { border-top-color: var(--ember); }
+
+.quote-block blockquote {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--white);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.quote-block blockquote::before {
+  content: '\201C';
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 72px;
+  line-height: 0.6;
+  color: var(--ember);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.quote-topic {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ghost);
+}
+
+/* ── WAITLIST ── */
+#join {
+  padding: 120px 0;
+  background: var(--ash);
+  position: relative;
+  overflow: hidden;
+}
+
+#join::before {
+  content: 'JOIN';
+  position: absolute;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 400px;
+  color: rgba(232, 53, 10, 0.03);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.join-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.join-inner .section-tag {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 16px;
+}
+
+.join-inner h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 0.95;
+  margin-bottom: 20px;
+}
+
+.join-inner > p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--bone);
+  margin-bottom: 48px;
+}
+
+/* ── GHL FORM EMBED STYLING ── */
+.ghl-form-wrapper {
+  position: relative;
+  z-index: 10;
+  background: var(--smoke);
+  border: 1px solid var(--fog);
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.ghl-form-wrapper iframe {
+  display: block;
+  width: 100%;
+  min-height: 780px;
+  border: none;
+}
+
+.form-disclaimer {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--ghost);
+  margin-top: 8px;
+  line-height: 1.6;
+  font-family: 'DM Mono', monospace;
+}
+
+/* ── WARNING ── */
+.warning-banner {
+  background: rgba(232, 53, 10, 0.1);
+  border: 1px solid rgba(232, 53, 10, 0.3);
+  padding: 32px 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 0;
+}
+
+.warning-banner p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--bone);
+  text-align: center;
+}
+
+.warning-banner strong { color: var(--ember); font-weight: 600; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--black);
+  border-top: 1px solid var(--smoke);
+  padding: 60px 40px 40px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-brand .logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  letter-spacing: 3px;
+  color: var(--ember);
+  margin-bottom: 16px;
+}
+
+.footer-brand .logo span { color: var(--white); }
+
+.footer-brand p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--ghost);
+  max-width: 360px;
+}
+
+.footer-col h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--ghost);
+  margin-bottom: 20px;
+}
+
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+
+.footer-col ul li a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--bone);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover { color: var(--ember); }
+
+.footer-bottom {
+  border-top: 1px solid var(--smoke);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--ghost);
+}
+
+.footer-bottom a { color: var(--ember); text-decoration: none; }
+.footer-bottom a:hover { text-decoration: underline; }
+
+/* ── SCROLL ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .truth-grid      { grid-template-columns: 1fr; }
+  .features-grid   { grid-template-columns: 1fr 1fr; }
+  .quotes-grid     { grid-template-columns: 1fr; }
+  .footer-top      { grid-template-columns: 1fr 1fr; }
+  .day-counter     { display: none; }
+}
+
+@media (max-width: 600px) {
+  nav { padding: 16px 20px; }
+  #hero { padding: 100px 20px 60px; }
+  .hero-stats { gap: 28px; }
+  .section-inner { padding: 0 20px; }
+  .features-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; gap: 40px; }
+  .badges-grid { gap: 12px; }
+  .badge { min-width: 100px; padding: 16px 12px; }
+  .quote-block { padding: 32px 24px; }
+  .warning-banner { padding: 24px 20px; }
+  footer { padding: 48px 20px 32px; }
+  .truth-card { padding: 20px; }
+  .timeline-item { grid-template-columns: 90px 32px 1fr; }
+  .ghl-form-wrapper iframe { min-height: 820px; }
+}
+</style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://thelastaddiction.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://thelastaddiction.com/og-image.png"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://thelastaddiction.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://thelastaddiction.com/og-image.png"></head>
+<body>
+
+<!-- PARTICLES -->
+<div id="particles"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">The Last<span> Addiction</span></a>
+  <div style="display:flex;gap:1.5rem;align-items:center">
+  <a href="/blog/" style="font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:#c8c0b4;text-decoration:none">War Journal</a>
+  <a href="#join" class="nav-cta">Join The War</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-text">WAR</div>
+
+  <div style="position:relative; z-index:2;">
+    <p class="hero-eyebrow">March 16, 2026 — Day <span id="dayCount">1</span> — The War Is Live</p>
+
+    <h1 class="hero-headline">
+      THE<br>
+      <span class="fire">LAST</span><br>
+      <span class="dim">ADDICTION</span>
+    </h1>
+
+    <p class="hero-sub">
+      You don't have a <strong>weight problem.</strong><br>
+      You have an <strong>addiction problem.</strong><br>
+      If you've been trying for years to drop the fat and keep failing —<br>
+      <strong>it's time to ask yourself if you're a food addict.</strong>
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat-block">
+        <span class="stat-num" id="startWeight">365</span>
+        <span class="stat-label">All-Time High (lbs)</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num green">135</span>
+        <span class="stat-label">Pounds Torched</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num gold" id="currentWeight">317.2</span>
+        <span class="stat-label">Current — Day 1</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num" style="color:var(--green)">265</span>
+        <span class="stat-label">The Target</span>
+      </div>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="#join" class="btn-primary">Join The War — Free</a>
+      <a href="#truth" class="btn-ghost">Read The Truth</a>
+    </div>
+  </div>
+
+  <div class="day-counter">
+    <span class="day-num" id="bigDayCount">1</span>
+    <span class="day-label">Days In</span>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="live-ticker" aria-hidden="true">
+  <div class="ticker-inner" id="tickerInner"></div>
+</div>
+
+<!-- THE TRUTH -->
+<section id="truth">
+  <div class="section-inner">
+    <div class="truth-grid">
+      <div class="truth-left reveal">
+        <p class="section-tag">The Hard Truth</p>
+        <h2>You Can't<br>Just<br>Stop<br><span style="color:var(--ember)">Eating.</span></h2>
+        <p>Every other addiction has a simple — brutal, hard, but simple — solution. <strong>Stop doing the thing.</strong></p>
+        <p>Alcohol? Stop drinking. Cigarettes? Stop smoking. Heroin? Stop using. The world builds systems around that abstinence.</p>
+        <p><strong>Food is the one addiction where you cannot simply abstain.</strong> You have to face your demon three times a day. Every single day. For the rest of your life.</p>
+        <p>Nobody talks about that. <strong>The Last Addiction does.</strong></p>
+      </div>
+      <div class="truth-right">
+        <div class="truth-card">
+          <h3>It's Real Neuroscience</h3>
+          <p>Highly processed food triggers the same dopamine pathways as hard drugs. Food addiction isn't weakness. It's a documented neurological loop — and it's been weaponized against you for decades.</p>
+        </div>
+        <div class="truth-card">
+          <h3>GLP-1 Drugs Are A Lie</h3>
+          <p>Up to 40% of weight lost on "GULP" drugs is lean muscle mass. Your metabolic engine. Your longevity. Gone — while you celebrate a number on a scale. The real cost is paid in years, not dollars.</p>
+        </div>
+        <div class="truth-card">
+          <h3>Fasting Changes The Chemistry</h3>
+          <p>Extended fasting doesn't just burn fat. It resets insulin sensitivity, triggers autophagy, clears the liver, and — critically — it breaks the neurological loop of food addiction in a way cutting calories never will.</p>
+        </div>
+        <div class="truth-card">
+          <h3>Muscle Is The Whole Game</h3>
+          <p>More muscle = lower all-cause mortality. The goal isn't just losing weight. It's building the machine that keeps you alive and functional for decades. Fasting and lifting aren't opposites — they're partners.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE MATH -->
+<section id="math">
+  <div class="section-inner">
+    <div class="math-header reveal">
+      <p class="section-tag">The Numbers — Unfiltered</p>
+      <h2>The War<br>In Data</h2>
+      <p>This isn't a testimonial. It's a documented battle that's still being fought. In public.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="t-weight">365</div>
+        <div class="t-line">
+          <div class="t-dot"></div>
+          <div class="t-connector"></div>
+        </div>
+        <div class="t-content">
+          <span class="t-tag">The Bottom</span>
+          <h3>365 lbs — 65" Waist</h3>
+          <p>Drive-thru addict. Hidden eating. Justifying every bite. Watching the body fail in slow motion.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="t-weight green">235</div>
+        <div class="t-line">
+          <div class="t-dot target"></div>
+          <div class="t-connector" style="background:linear-gradient(to bottom, var(--green), var(--smoke))"></div>
+        </div>
+        <div class="t-content">
+          <span class="t-tag" style="background:var(--green)">The Victory</span>
+          <h3>235 lbs — 135 Pounds Gone</h3>
+          <p>7.5 months. Extended fasting protocols. 65" waist to 34". No surgery. No drugs. No shortcuts.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="t-weight" style="color:var(--fog)">320</div>
+        <div class="t-line">
+          <div class="t-dot" style="background:var(--fog)"></div>
+          <div class="t-connector" style="background:linear-gradient(to bottom, var(--fog), var(--ember))"></div>
+        </div>
+        <div class="t-content">
+          <span class="t-tag" style="background:var(--fog)">The Relapse</span>
+          <h3>320 lbs — The Addict Returns</h3>
+          <p>3.5 years of muscle building. Also 3.5 years of the addiction reasserting itself. This is what food addiction looks like. It comes back. Every time. Until you build a system that beats it.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="t-weight current">317.2</div>
+        <div class="t-line">
+          <div class="t-dot current"></div>
+          <div class="t-connector" style="background:linear-gradient(to bottom, var(--flame), var(--green))"></div>
+        </div>
+        <div class="t-content">
+          <span class="t-tag" style="background:var(--flame)">Day 1 — March 16, 2026</span>
+          <h3>317.2 lbs — The War Restarts</h3>
+          <p>Official weigh-in. Photos taken. No hiding. Dry fast initiated. Journal locked until May 18, 2026. The door is closed.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="t-weight target">265</div>
+        <div class="t-line">
+          <div class="t-dot target"></div>
+        </div>
+        <div class="t-content">
+          <span class="t-tag" style="background:var(--green)">The Target — May 17, 2026</span>
+          <h3>265 lbs — The New Lean</h3>
+          <p>52 lbs of fat. 63 days. More muscle than the last time at this weight. May 17 is the 57th birthday. The reveal is May 18.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-section">
+      <div class="progress-header">
+        <span class="progress-title">Connor's Cut — Live Progress</span>
+        <span class="progress-nums" id="lostSoFar">0 lbs lost</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressBar"></div>
+      </div>
+      <div class="progress-markers">
+        <span class="progress-marker">317.2 lbs<br>Day 1</span>
+        <span class="progress-marker" style="text-align:center;">Target: 265 lbs<br>52 lbs to go</span>
+        <span class="progress-marker" style="text-align:right;">May 17<br>Birthday</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PLATFORM -->
+<section id="platform">
+  <div class="section-inner">
+    <div class="platform-header reveal">
+      <p class="section-tag">The Platform — Coming</p>
+      <h2>Your War.<br>Your Journal.<br>Your Rules.</h2>
+      <p>The Last Addiction is becoming a full community platform. Not a forum. Not a Facebook group. A real accountability engine — built for people serious about winning.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📓</span>
+        <h3>Private Journal</h3>
+        <p>Log your weight, record Loom entries, write your truth. Keep it private, share it with select members, or open it to the world. Your choice. Your pace.</p>
+        <span class="coming">Coming Soon</span>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🏆</span>
+        <h3>Badge System</h3>
+        <p>Earn badges for documented milestones. 72-hour fast completed. 50 lbs torched. 30-day journal streak. Badges you earn by doing the work — not by paying for them.</p>
+        <span class="coming">Coming Soon</span>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">👁</span>
+        <h3>Privacy Tiers</h3>
+        <p>Private. Members only. Select members. Public. You decide who sees what, entry by entry. The most vulnerable content stays locked until you're ready.</p>
+        <span class="coming">Coming Soon</span>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <h3>Fasting Protocols</h3>
+        <p>Not generic advice. Documented protocols from someone who's used them. 16:8. Extended water fasts. Dry fast ignition. Refeed guides. The real playbook.</p>
+        <span class="coming">Coming Soon</span>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💪</span>
+        <h3>Muscle Preservation</h3>
+        <p>Fasting and lifting together, not against each other. How to protect lean mass during extended fasts. Hormone optimization. The science and the lived experience.</p>
+        <span class="coming">Coming Soon</span>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🧠</span>
+        <h3>Mindset Protocol</h3>
+        <p>The food addiction neurological loop. How to break it. How to rebuild your relationship with eating. Practical, documented, and honest — not motivational poster fluff.</p>
+        <span class="coming">Coming Soon</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BADGES -->
+  <div class="badges-section">
+    <div class="badges-inner">
+      <h2 class="badges-title">The <span style="color:var(--ember)">Badge</span> System</h2>
+      <div class="badges-grid">
+        <div class="badge badge-founder">
+          <div class="badge-icon">🔥</div>
+          <span class="badge-name">Founder</span>
+          <span class="badge-desc">One exists.<br>Ever.</span>
+        </div>
+        <div class="badge badge-staff">
+          <div class="badge-icon">⚡</div>
+          <span class="badge-name">Staff</span>
+          <span class="badge-desc">Platform<br>Team</span>
+        </div>
+        <div class="badge badge-earned">
+          <div class="badge-icon">🧊</div>
+          <span class="badge-name">Dry Ignition</span>
+          <span class="badge-desc">Completed<br>a dry fast</span>
+        </div>
+        <div class="badge badge-earned">
+          <div class="badge-icon">💧</div>
+          <span class="badge-name">Water Warrior</span>
+          <span class="badge-desc">7-day<br>water fast</span>
+        </div>
+        <div class="badge badge-earned">
+          <div class="badge-icon">🦾</div>
+          <span class="badge-name">Iron Will</span>
+          <span class="badge-desc">First<br>72-hour fast</span>
+        </div>
+        <div class="badge badge-earned">
+          <div class="badge-icon">🏅</div>
+          <span class="badge-name">50 Club</span>
+          <span class="badge-desc">50+ lbs<br>documented</span>
+        </div>
+        <div class="badge badge-earned">
+          <div class="badge-icon">💯</div>
+          <span class="badge-name">100 Club</span>
+          <span class="badge-desc">100+ lbs<br>documented</span>
+        </div>
+        <div class="badge badge-earned">
+          <div class="badge-icon">📅</div>
+          <span class="badge-name">Streak Keeper</span>
+          <span class="badge-desc">30-day<br>journal streak</span>
+        </div>
+        <div class="badge badge-earned">
+          <div class="badge-icon">📣</div>
+          <span class="badge-name">Truth Teller</span>
+          <span class="badge-desc">Public entry<br>10+ reactions</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOD ADDICT RECOGNITION -->
+<section style="padding:120px 0; background:#080808; border-top:1px solid #1a1a1a;">
+  <div class="section-inner">
+    <div style="max-width:800px; margin:0 auto; text-align:center;">
+      <p class="section-tag" style="text-align:center;">The Question Nobody Asks</p>
+      <h2 style="font-family:'Bebas Neue',sans-serif; font-size:clamp(56px,9vw,120px); line-height:0.92; margin-bottom:40px;">Are You A<br><span style="color:#E8350A">Food Addict?</span></h2>
+      <p style="font-family:'Barlow Condensed',sans-serif; font-size:22px; font-weight:300; line-height:1.7; color:#c8c0b4; margin-bottom:24px;">Most people never ask themselves this question. They blame their metabolism. They blame stress. They blame their schedule. They buy the next program, try the next diet, and fail again — and wonder why.</p>
+      <p style="font-family:'Barlow Condensed',sans-serif; font-size:22px; font-weight:300; line-height:1.7; color:#F2EDE4; margin-bottom:48px;"><strong>If you have been trying for years — or decades — to lose the weight and keep failing, the answer may not be another diet. It may be that you are fighting an addiction with willpower tools. And that never works.</strong></p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:2px; text-align:left; margin-bottom:48px;">
+        <div style="background:#1a1a1a; padding:28px; border-top:3px solid #E8350A;">
+          <p style="font-family:'Barlow Condensed',sans-serif; font-size:17px; font-weight:300; line-height:1.6; color:#c8c0b4;">You think about food constantly — even right after eating.</p>
+        </div>
+        <div style="background:#1a1a1a; padding:28px; border-top:3px solid #E8350A;">
+          <p style="font-family:'Barlow Condensed',sans-serif; font-size:17px; font-weight:300; line-height:1.6; color:#c8c0b4;">You eat in secret. You hide what you bought. You lie about what you ate.</p>
+        </div>
+        <div style="background:#1a1a1a; padding:28px; border-top:3px solid #E8350A;">
+          <p style="font-family:'Barlow Condensed',sans-serif; font-size:17px; font-weight:300; line-height:1.6; color:#c8c0b4;">You've lost weight before — and gained it all back, plus more.</p>
+        </div>
+        <div style="background:#1a1a1a; padding:28px; border-top:3px solid #E8350A;">
+          <p style="font-family:'Barlow Condensed',sans-serif; font-size:17px; font-weight:300; line-height:1.6; color:#c8c0b4;">You use food to cope with stress, loneliness, boredom, or emotion.</p>
+        </div>
+        <div style="background:#1a1a1a; padding:28px; border-top:3px solid #E8350A;">
+          <p style="font-family:'Barlow Condensed',sans-serif; font-size:17px; font-weight:300; line-height:1.6; color:#c8c0b4;">You know exactly what you should eat — and you eat the wrong thing anyway.</p>
+        </div>
+        <div style="background:#1a1a1a; padding:28px; border-top:3px solid #E8350A;">
+          <p style="font-family:'Barlow Condensed',sans-serif; font-size:17px; font-weight:300; line-height:1.6; color:#c8c0b4;">You've justified every binge. You've promised to start Monday. You've been starting Monday for years.</p>
+        </div>
+      </div>
+      <p style="font-family:'Bebas Neue',sans-serif; font-size:clamp(28px,4vw,48px); color:#E8350A; margin-bottom:20px;">If any of those hit — you're in the right place.</p>
+      <p style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:300; color:#c8c0b4; margin-bottom:40px;">The Last Addiction isn't a diet. It's not a calorie counter. It's a community built by a food addict, for food addicts — with real protocols, real accountability, and zero tolerance for the lies we tell ourselves.</p>
+      <a href="#join" class="btn-primary" style="display:inline-block; font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:#080808; background:#E8350A; padding:18px 48px; text-decoration:none;">I'm Ready To Stop Lying To Myself</a>
+    </div>
+  </div>
+</section>
+
+<!-- HARD TRUTHS -->
+<section id="truths">
+  <div class="section-inner">
+    <div class="truths-header reveal">
+      <p class="section-tag">Words That Might Save Your Life</p>
+      <h2>Hard<br><span style="color:var(--ember)">Truths</span></h2>
+    </div>
+    <div class="quotes-grid">
+      <div class="quote-block">
+        <blockquote>You don't deserve a cheat meal. Not ever again. If you've spent years trying to drop the weight and keep failing — you don't have a willpower problem. You have an addiction problem. Cheat meals are for people who can handle them. Food addicts cannot. That's not an opinion. That's the disease.</blockquote>
+        <span class="quote-topic">On "Cheat Meals" — For Addicts Only</span>
+      </div>
+      <div class="quote-block">
+        <blockquote>Alcohol and cigarettes are easier to quit because they're not necessary. But food? You can't abstain from food. You have to face your demon three times a day and somehow find the discipline to stop at "enough."</blockquote>
+        <span class="quote-topic">On Food Addiction</span>
+      </div>
+      <div class="quote-block">
+        <blockquote>If you don't have a plan after dropping the fat, you will inevitably get back to where you were — and worse. The weight doesn't stay off by accident. It stays off because you closed the exits.</blockquote>
+        <span class="quote-topic">On What Comes Next</span>
+      </div>
+      <div class="quote-block">
+        <blockquote>There are so many who go to the gym and never change. It's because they don't have a plan, or they're doing it wrong. Their frequency isn't aligned with their own personal data. The gym isn't the problem. The strategy is.</blockquote>
+        <span class="quote-topic">On Why People Fail</span>
+      </div>
+      <div class="quote-block">
+        <blockquote>Be present with every move you make with food. Weigh the consequences of your actions. It's not just what you eat — it's the type, the quantity, the reason, the improper view, and the "over time" consumption that destroys you.</blockquote>
+        <span class="quote-topic">On Mindfulness</span>
+      </div>
+      <div class="quote-block">
+        <blockquote>Fasting isn't starvation. Starvation happens to you. Fasting is something you do on purpose, with a plan, with a goal, with an exit strategy. The difference is everything.</blockquote>
+        <span class="quote-topic">On Fasting vs Starvation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WARNING -->
+<section style="padding: 60px 0; background: var(--ash);">
+  <div class="section-inner">
+    <div class="warning-banner">
+      <p>⚠️ <strong>Medical Disclaimer:</strong> Nothing on this platform constitutes medical advice. Always consult a licensed physician before beginning any fasting protocol, dietary change, or exercise program. The Last Addiction is a personal documentation and community platform — not a medical service. If you are experiencing a medical emergency, <strong>call 911 immediately.</strong> This platform is not appropriate for individuals with eating disorders. Resources: National Alliance for Eating Disorders: <strong>1-866-662-1235</strong> | Crisis Text Line: Text <strong>HOME to 741741</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- WAITLIST / JOIN -->
+<section id="join">
+  <div class="section-inner">
+    <div class="join-inner">
+      <p class="section-tag">Join The Waitlist</p>
+      <h2>Get In<br><span style="color:var(--ember)">Early.</span></h2>
+      <p>The platform launches May 18, 2026. Founding members get lifetime access to the early community, first access to Connor's Day 1-63 journal unlock, and the first badge drop. No cost to join the waitlist.</p>
+
+      <!-- GHL FORM EMBED — REPLACES BROKEN CUSTOM FORM -->
+      <div class="ghl-form-wrapper">
+        <iframe
+          src="https://info.fastingbot.com/widget/form/NWunxVI07otNLn7cbvYW"
+          style="width:100%;height:100%;min-height:780px;border:none;border-radius:3px;"
+          id="inline-NWunxVI07otNLn7cbvYW"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="the last addiction preview"
+          data-height="1541"
+          data-layout-iframe-id="inline-NWunxVI07otNLn7cbvYW"
+          data-form-id="NWunxVI07otNLn7cbvYW"
+          title="the last addiction preview"
+        ></iframe>
+      </div>
+      <p class="form-disclaimer">Your information is stored securely and never sold. You can request deletion at any time. Questions? connor@thelastaddiction.com | (661) 400-1720</p>
+    </div>
+  </div>
+</section>
+
+<!-- GHL Form Embed Script — MUST be after iframe -->
+<script src="https://info.fastingbot.com/js/form_embed.js"></script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">The Last<span> Addiction</span></div>
+        <p>Real transformation from someone living it. 365 to 240 — 135 pounds of fat torched. Now cutting from 317.2 to 265. No surgery. No drugs. No shortcuts. Food addiction is real. The war is documented in public. Join it.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="#truth">The Truth</a></li>
+          <li><a href="#math">The Data</a></li>
+          <li><a href="#platform">Coming Features</a></li>
+          <li><a href="#truths">Hard Truths</a></li>
+          <li><a href="#join">Join Waitlist</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal & Contact</h4>
+        <ul>
+          <li><a href="/terms">Member Agreement</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="mailto:connor@thelastaddiction.com">connor@thelastaddiction.com</a></li>
+          <li><a href="tel:6614001720">(661) 400-1720</a></li>
+          <li><a href="https://thelastaddiction.com/calendar">Book a Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 TheLastAddiction.com — Santa Clarita, California</p>
+      <p><a href="https://honorelevate.com" target="_blank">Coded by Connor with Honor | AI Growth Architect</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── PARTICLES
+const container = document.getElementById('particles');
+const colors = ['#E8350A','#F5A623','#FF6B35','#FFD700','#CC2200'];
+for (let i = 0; i < 60; i++) {
+  const s = document.createElement('div');
+  s.className = 'spark';
+  s.style.left       = Math.random() * 100 + '%';
+  s.style.background = colors[Math.floor(Math.random() * colors.length)];
+  s.style.setProperty('--drift',  (Math.random() * 80 - 40) + 'px');
+  s.style.setProperty('--drift2', (Math.random() * 160 - 80) + 'px');
+  s.style.animationDuration = (Math.random() * 12 + 8) + 's';
+  s.style.animationDelay    = (Math.random() * 15) + 's';
+  s.style.width  = (Math.random() * 3 + 1) + 'px';
+  s.style.height = s.style.width;
+  container.appendChild(s);
+}
+
+// ── DAY COUNTER
+function getDayCount() {
+  const start = new Date('2026-03-16T00:00:00');
+  const now   = new Date();
+  const diff  = Math.floor((now - start) / (1000 * 60 * 60 * 24)) + 1;
+  return Math.max(1, diff);
+}
+const day = getDayCount();
+document.getElementById('dayCount').textContent    = day;
+document.getElementById('bigDayCount').textContent = day;
+
+// ── TICKER
+const items = [
+  'Day ' + day + ' is Live',
+  '317.2 lbs — March 16 2026',
+  'Target: 265 lbs by May 17',
+  '63 Days',
+  '52 Pounds of Fat',
+  'No Surgery',
+  'No GLP-1 Drugs',
+  'No Shortcuts',
+  'Real Protocols',
+  'Real Data',
+  'The War Is Public',
+  'Join The Fight — Free',
+];
+const ticker = document.getElementById('tickerInner');
+const full = [...items, ...items].map(t =>
+  `<span class="ticker-item">${t} <span class="ticker-sep">|</span></span>`
+).join('');
+ticker.innerHTML = full + full;
+
+// ── PROGRESS BAR
+const startW  = 317.2;
+const targetW = 265;
+const total   = startW - targetW;
+const current = startW;
+const lost    = startW - current;
+const pct     = Math.min(100, Math.max(0, (lost / total) * 100));
+
+setTimeout(() => {
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('lostSoFar').textContent   = lost.toFixed(1) + ' lbs lost';
+}, 600);
+
+// ── SCROLL REVEALS
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      if (e.target.classList.contains('reveal')) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'none';
+      }
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.truth-card, .timeline-item, .feature-card, .quote-block').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.reveal').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(30px)';
+  el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+  observer.observe(el);
+});
+
+document.querySelectorAll('.truth-card').forEach((el, i) => {
+  el.style.transitionDelay = (i * 0.12) + 's';
+});
+document.querySelectorAll('.feature-card').forEach((el, i) => {
+  el.style.transitionDelay = (i * 0.1) + 's';
+});
+document.querySelectorAll('.timeline-item').forEach((el, i) => {
+  el.style.transitionDelay = (i * 0.15) + 's';
+});
+document.querySelectorAll('.quote-block').forEach((el, i) => {
+  el.style.transitionDelay = (i * 0.1) + 's';
+});
+
+// ── GHL FORM AUTO-RESIZE
+window.addEventListener('message', function(e) {
+  if (e.data && e.data.type === 'hsFormCallback' && e.data.eventName === 'onFormReady') return;
+  if (typeof e.data === 'string') {
+    try {
+      const d = JSON.parse(e.data);
+      if (d.formHeight) {
+        const iframe = document.getElementById('inline-NWunxVI07otNLn7cbvYW');
+        if (iframe) iframe.style.height = d.formHeight + 'px';
+      }
+    } catch(err) {}
+  }
+});
+</script>
+</body>
+</html>
