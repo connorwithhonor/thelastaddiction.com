@@ -1,0 +1,5 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://thelastaddiction.com/sitemap.xml
+

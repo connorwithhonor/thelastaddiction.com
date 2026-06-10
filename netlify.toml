@@ -1,0 +1,18 @@
+# thelastaddiction.com - Netlify build config
+# Source of truth: this repo (git-canonical as of 2026-06-10). Deploys on push to main once the
+# Netlify project (cdee915a) is linked to the GitHub repo. Site is static; publish from root.
+
+[build]
+  publish = "."
+
+# Keep extensionless pretty URLs working (e.g. /blog/its-never-just-water-weight -> blog/its-never-just-water-weight.html)
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.css]
+  bundle = false
+  minify = false
+
+[build.processing.js]
+  bundle = false
+  minify = false
