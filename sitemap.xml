@@ -205,13 +205,35 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thelastaddiction.com/blog/the-lull/</loc>
+    <loc>https://thelastaddiction.com/blog/why-weight-loss-stops-after-the-first-week-water-weight-not-fat/</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://thelastaddiction.com/blog/the-rigged-fight/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://thelastaddiction.com/blog/the-two-started</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thelastaddiction.com/blog/2026-098-warehouse-of-fuel</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
+
 
 
 

@@ -1,0 +1,8 @@
+# Netlify redirects for thelastaddiction.com
+# Format: from  to  status
+# Slug changes must be 301'd here forever. Never delete a line, even years later:
+# an old URL can still be sitting in someone's text message, a podcast description,
+# or another site's link. A 301 costs nothing and preserves the link equity.
+
+/blog/the-lull   /blog/why-weight-loss-stops-after-the-first-week-water-weight-not-fat   301
+/blog/the-lull/  /blog/why-weight-loss-stops-after-the-first-week-water-weight-not-fat/  301
