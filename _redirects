@@ -6,3 +6,7 @@
 
 /blog/the-lull   /blog/why-weight-loss-stops-after-the-first-week-water-weight-not-fat   301
 /blog/the-lull/  /blog/why-weight-loss-stops-after-the-first-week-water-weight-not-fat/  301
+
+# Daily Download recovery show — friendly entry that redirects to the always-fresh hub channel.
+/daily        https://daily-download.pages.dev/recovery  302
+/daily-show   https://daily-download.pages.dev/recovery  302
