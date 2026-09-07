@@ -202,6 +202,80 @@ nav a.nav-cta:hover { background: var(--flame); }
   animation: fadeUp 0.8s ease forwards 1.1s;
 }
 
+/* ── HERO GRID + 9:16 VIDEO ── */
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  gap: 56px;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-copy { min-width: 0; }
+
+.hero-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: start;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 0.6s;
+}
+
+/* Sticky only where overflow:clip exists. overflow:hidden on #hero would turn the hero into the
+   sticky scroll container and mis-place the frame by the top offset at load. */
+@supports (overflow: clip) {
+  #hero { overflow: clip; }
+  .hero-video { position: sticky; top: 140px; /* clears the MacBox bar + fixed nav */ }
+}
+
+/* Portrait frame: 9:16, never taller than the viewport, never wider than a phone */
+.hero-video-frame {
+  width: min(100%, 400px, calc(76vh * 9 / 16));
+  background: #000;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(232, 53, 10, 0.45);
+  box-shadow: 0 0 0 6px #111, 0 30px 80px rgba(0,0,0,0.65), 0 0 70px rgba(232, 53, 10, 0.18);
+}
+
+.hero-video-ratio {
+  position: relative;
+  height: 0;
+  padding-bottom: 177.7778%; /* 9:16 */
+}
+
+.hero-video-ratio iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+  display: block;
+}
+
+.hero-video-caption {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--ghost);
+  text-align: center;
+}
+
+.hero-video-caption span { color: var(--ember); }
+
+/* The ghost day counter lived where the video now sits */
+.day-counter { display: none; }
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-video { order: -1; position: static !important; align-self: auto; }
+  .hero-video-frame { width: min(100%, 360px, calc(62vh * 9 / 16)); }
+}
+
 .btn-primary {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px;
@@ -1042,7 +1116,8 @@ footer {
 <section id="hero">
   <div class="hero-bg-text">WAR</div>
 
-  <div style="position:relative; z-index:2;">
+  <div class="hero-grid">
+  <div class="hero-copy">
     <p class="hero-eyebrow">The War Restarted April 13, 2026 — Day <span id="dayCount">3</span> — Fast 4 Is Live</p>
 
     <h1 class="hero-headline">
@@ -1082,6 +1157,17 @@ footer {
       <a href="#truth" class="btn-ghost">Read The Truth</a>
     </div>
   </div>
+
+  <!-- HERO VIDEO: 9:16 Loom, the before and after -->
+  <div class="hero-video" id="heroVideo">
+    <div class="hero-video-frame">
+      <div class="hero-video-ratio">
+        <iframe src="https://www.loom.com/embed/44582dcb7f82478ea41d0df02a7945e2?hide_owner=true&amp;hide_share=true&amp;hide_title=true&amp;hideEmbedTopBar=true" title="Burning the fat: 365 to 231 in under 8 months" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <p class="hero-video-caption"><span>365 to 231.</span> Under 8 months. 23 seconds.</p>
+  </div>
+  </div><!-- /hero-grid -->
 
   <div class="day-counter">
     <span class="day-num" id="bigDayCount">1</span>
