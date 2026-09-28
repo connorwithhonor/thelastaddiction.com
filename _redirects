@@ -10,3 +10,9 @@
 # Daily Download recovery show — friendly entry that redirects to the always-fresh hub channel.
 /daily        https://daily-download.pages.dev/recovery  302
 /daily-show   https://daily-download.pages.dev/recovery  302
+
+# Native HonorElevate checkout routes.
+/checkout https://buy.thelastaddiction.com/checkout-page 302
+/checkout/ https://buy.thelastaddiction.com/checkout-page 302
+/inner-circle https://buy.thelastaddiction.com/inner-circle 302
+/inner-circle/ https://buy.thelastaddiction.com/inner-circle 302

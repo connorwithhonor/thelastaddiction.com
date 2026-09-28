@@ -16,3 +16,10 @@
 [build.processing.js]
   bundle = false
   minify = false
+
+# Public captions shared with the native HonorElevate funnel.
+[[headers]]
+  for = "/assets/*.vtt"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "text/vtt; charset=utf-8"
