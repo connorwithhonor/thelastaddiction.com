@@ -23,3 +23,14 @@
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Content-Type = "text/vtt; charset=utf-8"
+
+# Existing extensionless legal pages contain HTML.
+[[headers]]
+  for = "/privacy"
+  [headers.values]
+    Content-Type = "text/html; charset=utf-8"
+
+[[headers]]
+  for = "/terms"
+  [headers.values]
+    Content-Type = "text/html; charset=utf-8"
